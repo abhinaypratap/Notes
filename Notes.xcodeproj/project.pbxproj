@@ -15,6 +15,9 @@
 		3BBCD9EA29D352AA008464C4 /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCD9E929D352AA008464C4 /* NotesUITests.swift */; };
 		3BBCD9EC29D352AA008464C4 /* NotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCD9EB29D352AA008464C4 /* NotesUITestsLaunchTests.swift */; };
 		3BBCD9FB29D35365008464C4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3BBCD9FA29D35365008464C4 /* README.md */; };
+		3BBCDA0129D3553C008464C4 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCDA0029D3553C008464C4 /* Note.swift */; };
+		3BBCDA0329D3557C008464C4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCDA0229D3557C008464C4 /* UserData.swift */; };
+		3BBCDA0529D356B9008464C4 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCDA0429D356B9008464C4 /* ListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		3BBCD9E929D352AA008464C4 /* NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITests.swift; sourceTree = "<group>"; };
 		3BBCD9EB29D352AA008464C4 /* NotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3BBCD9FA29D35365008464C4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3BBCDA0029D3553C008464C4 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		3BBCDA0229D3557C008464C4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		3BBCDA0429D356B9008464C4 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 		3BBCD9FC29D35394008464C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3BBCDA0029D3553C008464C4 /* Note.swift */,
+				3BBCDA0229D3557C008464C4 /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				3BBCD9D029D352A6008464C4 /* ContentView.swift */,
+				3BBCDA0429D356B9008464C4 /* ListRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,6 +335,9 @@
 			files = (
 				3BBCD9D129D352A6008464C4 /* ContentView.swift in Sources */,
 				3BBCD9CF29D352A6008464C4 /* AppMain.swift in Sources */,
+				3BBCDA0329D3557C008464C4 /* UserData.swift in Sources */,
+				3BBCDA0129D3553C008464C4 /* Note.swift in Sources */,
+				3BBCDA0529D356B9008464C4 /* ListRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

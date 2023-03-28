@@ -1,15 +1,22 @@
 import SwiftUI
 
+/// This is the main view of our app,
+/// It is made of a Table with one line per Note
 struct ContentView: View {
+    @ObservedObject private var userData: UserData = .shared
+
     var body: some View {
-        VStack {
-            Text("Hello, world!")
+        List {
+            ForEach(userData.notes) { note in
+                ListRow(note: note)
+            }
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        prepareTestData()
+        return ContentView()
     }
 }
