@@ -18,6 +18,12 @@
 		3BBCDA0129D3553C008464C4 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCDA0029D3553C008464C4 /* Note.swift */; };
 		3BBCDA0329D3557C008464C4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCDA0229D3557C008464C4 /* UserData.swift */; };
 		3BBCDA0529D356B9008464C4 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCDA0429D356B9008464C4 /* ListRow.swift */; };
+		3BBCDA0829D5546C008464C4 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 3BBCDA0729D5546C008464C4 /* AWSCognitoAuthPlugin */; };
+		3BBCDA0A29D5546C008464C4 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 3BBCDA0929D5546C008464C4 /* AWSS3StoragePlugin */; };
+		3BBCDA0C29D5546C008464C4 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 3BBCDA0B29D5546C008464C4 /* Amplify */; };
+		3BBCDA0F29D55554008464C4 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BBCDA0D29D55553008464C4 /* awsconfiguration.json */; };
+		3BBCDA1029D55554008464C4 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BBCDA0E29D55553008464C4 /* amplifyconfiguration.json */; };
+		3BBCDA1229D55579008464C4 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCDA1129D55579008464C4 /* Backend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,9 @@
 		3BBCDA0029D3553C008464C4 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		3BBCDA0229D3557C008464C4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		3BBCDA0429D356B9008464C4 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		3BBCDA0D29D55553008464C4 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		3BBCDA0E29D55553008464C4 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		3BBCDA1129D55579008464C4 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBCDA0C29D5546C008464C4 /* Amplify in Frameworks */,
+				3BBCDA0829D5546C008464C4 /* AWSCognitoAuthPlugin in Frameworks */,
+				3BBCDA0A29D5546C008464C4 /* AWSS3StoragePlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				3BBCD9CE29D352A6008464C4 /* AppMain.swift */,
+				3BBCDA1129D55579008464C4 /* Backend.swift */,
+				3BBCDA0E29D55553008464C4 /* amplifyconfiguration.json */,
+				3BBCDA0D29D55553008464C4 /* awsconfiguration.json */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -196,6 +211,11 @@
 			dependencies = (
 			);
 			name = Notes;
+			packageProductDependencies = (
+				3BBCDA0729D5546C008464C4 /* AWSCognitoAuthPlugin */,
+				3BBCDA0929D5546C008464C4 /* AWSS3StoragePlugin */,
+				3BBCDA0B29D5546C008464C4 /* Amplify */,
+			);
 			productName = Notes;
 			productReference = 3BBCD9CB29D352A6008464C4 /* Notes.app */;
 			productType = "com.apple.product-type.application";
@@ -268,6 +288,9 @@
 				Base,
 			);
 			mainGroup = 3BBCD9C229D352A6008464C4;
+			packageReferences = (
+				3BBCDA0629D5546C008464C4 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			productRefGroup = 3BBCD9CC29D352A6008464C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,7 +307,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBCDA0F29D55554008464C4 /* awsconfiguration.json in Resources */,
 				3BBCD9FB29D35365008464C4 /* README.md in Resources */,
+				3BBCDA1029D55554008464C4 /* amplifyconfiguration.json in Resources */,
 				3BBCD9D629D352AA008464C4 /* Preview Assets.xcassets in Resources */,
 				3BBCD9D329D352AA008464C4 /* Assets.xcassets in Resources */,
 			);
@@ -335,6 +360,7 @@
 			files = (
 				3BBCD9D129D352A6008464C4 /* ContentView.swift in Sources */,
 				3BBCD9CF29D352A6008464C4 /* AppMain.swift in Sources */,
+				3BBCDA1229D55579008464C4 /* Backend.swift in Sources */,
 				3BBCDA0329D3557C008464C4 /* UserData.swift in Sources */,
 				3BBCDA0129D3553C008464C4 /* Note.swift in Sources */,
 				3BBCDA0529D356B9008464C4 /* ListRow.swift in Sources */,
@@ -670,6 +696,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BBCDA0629D5546C008464C4 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BBCDA0729D5546C008464C4 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BBCDA0629D5546C008464C4 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		3BBCDA0929D5546C008464C4 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BBCDA0629D5546C008464C4 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
+		};
+		3BBCDA0B29D5546C008464C4 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BBCDA0629D5546C008464C4 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BBCD9C329D352A6008464C4 /* Project object */;
 }
